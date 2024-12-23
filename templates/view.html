@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://thumbs.dreamstime.com/b/vintage-notebook-pen-table-generative-ai-vintage-notebook-pen-table-design-background-instagram-facebook-wall-324122537.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        h1 {
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            padding: 20px;
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Created time:{{ndata[3]}}</h1>
+           <div>
+                <label for="note-title">Title</label>
+                <input for="text" id="note-title" name="title" value="{{ndata[1]}}" placeholder="Enter notes title" readonly>
+           </div>
+           <div>
+            <label for="note-description">Description</label>
+            <textarea name="Description" id="note-description" placeholder="Enter notes description" readonly>{{ndata[2]}}</textarea>
+           </div>
+    </div>
+</body>
+</html>

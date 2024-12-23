@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://thumbs.dreamstime.com/b/vintage-notebook-pen-table-generative-ai-vintage-notebook-pen-table-design-background-instagram-facebook-wall-324122537.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        h1 {
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+    
+        <link rel="stylesheet" href="static.css,filename=addnotes.html">
+    
+    
+</head>
+<body>
+ 
+        <form method="POST">
+        <h1>Update Your Notes</h1>
+            <p> Enter Your Title: <br>
+                <input type="text" name="title" value="{{ndata[1]}}" placeholder="Enter Your Title" />
+            </p>
+            <p> Description: <br>
+                <textarea name="Description" id="">{{ndata[2]}}</textarea>
+            </p>
+            <p>
+                <button style="background-color: black; color: bisque;">Submit</button>
+            </p>
+        </form>
+   
+</body>
+
+</html>
